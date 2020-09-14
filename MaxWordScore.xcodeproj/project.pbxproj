@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96DEB2D6250A852400A54338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB2D5250A852400A54338 /* AppDelegate.swift */; };
+		96DEB2D8250A852400A54338 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB2D7250A852400A54338 /* SceneDelegate.swift */; };
+		96DEB2DA250A852400A54338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB2D9250A852400A54338 /* ContentView.swift */; };
+		96DEB2DC250A852500A54338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DEB2DB250A852500A54338 /* Assets.xcassets */; };
+		96DEB2DF250A852500A54338 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DEB2DE250A852500A54338 /* Preview Assets.xcassets */; };
+		96DEB2E2250A852500A54338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DEB2E0250A852500A54338 /* LaunchScreen.storyboard */; };
+		96DEB2ED250A852500A54338 /* MaxWordScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB2EC250A852500A54338 /* MaxWordScoreTests.swift */; };
+		96DEB2F8250A852500A54338 /* MaxWordScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB2F7250A852500A54338 /* MaxWordScoreUITests.swift */; };
+		96DEB309250A8AE600A54338 /* ScoreValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB308250A8AE600A54338 /* ScoreValues.swift */; };
+		96DEB30B250AAF4A00A54338 /* ScoreValuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB30A250AAF4A00A54338 /* ScoreValuesTests.swift */; };
+		96DEB30D250ABC6E00A54338 /* DefaultScoreValuesValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB30C250ABC6E00A54338 /* DefaultScoreValuesValidator.swift */; };
+		96DEB30F250ABCE500A54338 /* DefaultScoreValueValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB30E250ABCE500A54338 /* DefaultScoreValueValidatorTests.swift */; };
+		96DEB311250B06BA00A54338 /* MockScoreValueValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB310250B06BA00A54338 /* MockScoreValueValidator.swift */; };
+		96DEB313250B0E3700A54338 /* ScoreCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB312250B0E3700A54338 /* ScoreCalculator.swift */; };
+		96DEB315250B0EAE00A54338 /* DefaultWordsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB314250B0EAE00A54338 /* DefaultWordsValidator.swift */; };
+		96DEB317250B0F7700A54338 /* DefaultWordsValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB316250B0F7700A54338 /* DefaultWordsValidatorTests.swift */; };
+		96DEB319250B263000A54338 /* DefaultLettersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB318250B263000A54338 /* DefaultLettersValidator.swift */; };
+		96DEB31B250B276C00A54338 /* DefaultLettersValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB31A250B276C00A54338 /* DefaultLettersValidatorTests.swift */; };
+		96DEB320250B2B0400A54338 /* ValidationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB31F250B2B0400A54338 /* ValidationErrors.swift */; };
+		96DEB322250B2CEF00A54338 /* ScoreValuesValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB321250B2CEF00A54338 /* ScoreValuesValidator.swift */; };
+		96DEB325250B2D7C00A54338 /* WordsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB324250B2D7C00A54338 /* WordsValidator.swift */; };
+		96DEB327250B2DD600A54338 /* LettersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DEB326250B2DD600A54338 /* LettersValidator.swift */; };
+		96DF8402250B366700C80BBB /* ScoreCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF8401250B366700C80BBB /* ScoreCalculatorTests.swift */; };
+		96DF8404250B376400C80BBB /* MockWordsValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF8403250B376400C80BBB /* MockWordsValidator.swift */; };
+		96DF8406250B386000C80BBB /* MockLettersValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF8405250B386000C80BBB /* MockLettersValidator.swift */; };
+		96DF8408250BB42100C80BBB /* WordGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF8407250BB42100C80BBB /* WordGroup.swift */; };
+		96DF840A250BB44300C80BBB /* WordGroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF8409250BB44300C80BBB /* WordGroupTests.swift */; };
+		96DF840C250BB98500C80BBB /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF840B250BB98500C80BBB /* Letters.swift */; };
+		96DF8410250BBBD600C80BBB /* LettersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF840F250BBBD600C80BBB /* LettersTests.swift */; };
+		96DF8413250D66CF00C80BBB /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DF8412250D66CF00C80BBB /* Array+Helpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96DEB2E9250A852500A54338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96DEB2CA250A852400A54338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96DEB2D1250A852400A54338;
+			remoteInfo = MaxWordScore;
+		};
+		96DEB2F4250A852500A54338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96DEB2CA250A852400A54338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96DEB2D1250A852400A54338;
+			remoteInfo = MaxWordScore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96DEB2D2250A852400A54338 /* MaxWordScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaxWordScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DEB2D5250A852400A54338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96DEB2D7250A852400A54338 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		96DEB2D9250A852400A54338 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96DEB2DB250A852500A54338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96DEB2DE250A852500A54338 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96DEB2E1250A852500A54338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96DEB2E3250A852500A54338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DEB2E8250A852500A54338 /* MaxWordScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxWordScoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DEB2EC250A852500A54338 /* MaxWordScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxWordScoreTests.swift; sourceTree = "<group>"; };
+		96DEB2EE250A852500A54338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DEB2F3250A852500A54338 /* MaxWordScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaxWordScoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DEB2F7250A852500A54338 /* MaxWordScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxWordScoreUITests.swift; sourceTree = "<group>"; };
+		96DEB2F9250A852500A54338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DEB307250A857C00A54338 /* Rules.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Rules.md; sourceTree = "<group>"; };
+		96DEB308250A8AE600A54338 /* ScoreValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreValues.swift; sourceTree = "<group>"; };
+		96DEB30A250AAF4A00A54338 /* ScoreValuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreValuesTests.swift; sourceTree = "<group>"; };
+		96DEB30C250ABC6E00A54338 /* DefaultScoreValuesValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScoreValuesValidator.swift; sourceTree = "<group>"; };
+		96DEB30E250ABCE500A54338 /* DefaultScoreValueValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultScoreValueValidatorTests.swift; sourceTree = "<group>"; };
+		96DEB310250B06BA00A54338 /* MockScoreValueValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScoreValueValidator.swift; sourceTree = "<group>"; };
+		96DEB312250B0E3700A54338 /* ScoreCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculator.swift; sourceTree = "<group>"; };
+		96DEB314250B0EAE00A54338 /* DefaultWordsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWordsValidator.swift; sourceTree = "<group>"; };
+		96DEB316250B0F7700A54338 /* DefaultWordsValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultWordsValidatorTests.swift; sourceTree = "<group>"; };
+		96DEB318250B263000A54338 /* DefaultLettersValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLettersValidator.swift; sourceTree = "<group>"; };
+		96DEB31A250B276C00A54338 /* DefaultLettersValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLettersValidatorTests.swift; sourceTree = "<group>"; };
+		96DEB31F250B2B0400A54338 /* ValidationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationErrors.swift; sourceTree = "<group>"; };
+		96DEB321250B2CEF00A54338 /* ScoreValuesValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreValuesValidator.swift; sourceTree = "<group>"; };
+		96DEB324250B2D7C00A54338 /* WordsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsValidator.swift; sourceTree = "<group>"; };
+		96DEB326250B2DD600A54338 /* LettersValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersValidator.swift; sourceTree = "<group>"; };
+		96DF8401250B366700C80BBB /* ScoreCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCalculatorTests.swift; sourceTree = "<group>"; };
+		96DF8403250B376400C80BBB /* MockWordsValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWordsValidator.swift; sourceTree = "<group>"; };
+		96DF8405250B386000C80BBB /* MockLettersValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLettersValidator.swift; sourceTree = "<group>"; };
+		96DF8407250BB42100C80BBB /* WordGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGroup.swift; sourceTree = "<group>"; };
+		96DF8409250BB44300C80BBB /* WordGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGroupTests.swift; sourceTree = "<group>"; };
+		96DF840B250BB98500C80BBB /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letters.swift; sourceTree = "<group>"; };
+		96DF840F250BBBD600C80BBB /* LettersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersTests.swift; sourceTree = "<group>"; };
+		96DF8412250D66CF00C80BBB /* Array+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
+		96DF8414250F16A600C80BBB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96DEB2CF250A852400A54338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DEB2E5250A852500A54338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DEB2F0250A852500A54338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96DEB2C9250A852400A54338 = {
+			isa = PBXGroup;
+			children = (
+				96DF8414250F16A600C80BBB /* README.md */,
+				96DEB2D4250A852400A54338 /* MaxWordScore */,
+				96DEB2EB250A852500A54338 /* MaxWordScoreTests */,
+				96DEB2F6250A852500A54338 /* MaxWordScoreUITests */,
+				96DEB2D3250A852400A54338 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96DEB2D3250A852400A54338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB2D2250A852400A54338 /* MaxWordScore.app */,
+				96DEB2E8250A852500A54338 /* MaxWordScoreTests.xctest */,
+				96DEB2F3250A852500A54338 /* MaxWordScoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96DEB2D4250A852400A54338 /* MaxWordScore */ = {
+			isa = PBXGroup;
+			children = (
+				96DF8411250D66AF00C80BBB /* Extensions */,
+				96DEB2DD250A852500A54338 /* Preview Content */,
+				96DEB307250A857C00A54338 /* Rules.md */,
+				96DEB2D5250A852400A54338 /* AppDelegate.swift */,
+				96DEB2D7250A852400A54338 /* SceneDelegate.swift */,
+				96DEB2D9250A852400A54338 /* ContentView.swift */,
+				96DEB2DB250A852500A54338 /* Assets.xcassets */,
+				96DEB2E0250A852500A54338 /* LaunchScreen.storyboard */,
+				96DEB2E3250A852500A54338 /* Info.plist */,
+				96DF8415250F17AB00C80BBB /* Models */,
+				96DEB31C250B2ABD00A54338 /* Validators */,
+			);
+			path = MaxWordScore;
+			sourceTree = "<group>";
+		};
+		96DEB2DD250A852500A54338 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB2DE250A852500A54338 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96DEB2EB250A852500A54338 /* MaxWordScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB310250B06BA00A54338 /* MockScoreValueValidator.swift */,
+				96DEB2EC250A852500A54338 /* MaxWordScoreTests.swift */,
+				96DEB2EE250A852500A54338 /* Info.plist */,
+				96DF8403250B376400C80BBB /* MockWordsValidator.swift */,
+				96DF8405250B386000C80BBB /* MockLettersValidator.swift */,
+			);
+			path = MaxWordScoreTests;
+			sourceTree = "<group>";
+		};
+		96DEB2F6250A852500A54338 /* MaxWordScoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB2F7250A852500A54338 /* MaxWordScoreUITests.swift */,
+				96DEB2F9250A852500A54338 /* Info.plist */,
+			);
+			path = MaxWordScoreUITests;
+			sourceTree = "<group>";
+		};
+		96DEB31C250B2ABD00A54338 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB323250B2D1700A54338 /* Protocols */,
+				96DEB328250B2E2B00A54338 /* Default Validators */,
+				96DEB31F250B2B0400A54338 /* ValidationErrors.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		96DEB323250B2D1700A54338 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB326250B2DD600A54338 /* LettersValidator.swift */,
+				96DEB321250B2CEF00A54338 /* ScoreValuesValidator.swift */,
+				96DEB324250B2D7C00A54338 /* WordsValidator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		96DEB328250B2E2B00A54338 /* Default Validators */ = {
+			isa = PBXGroup;
+			children = (
+				96DEB318250B263000A54338 /* DefaultLettersValidator.swift */,
+				96DEB31A250B276C00A54338 /* DefaultLettersValidatorTests.swift */,
+				96DEB30C250ABC6E00A54338 /* DefaultScoreValuesValidator.swift */,
+				96DEB30E250ABCE500A54338 /* DefaultScoreValueValidatorTests.swift */,
+				96DEB314250B0EAE00A54338 /* DefaultWordsValidator.swift */,
+				96DEB316250B0F7700A54338 /* DefaultWordsValidatorTests.swift */,
+			);
+			path = "Default Validators";
+			sourceTree = "<group>";
+		};
+		96DF8411250D66AF00C80BBB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				96DF8412250D66CF00C80BBB /* Array+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96DF8415250F17AB00C80BBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96DF840B250BB98500C80BBB /* Letters.swift */,
+				96DF840F250BBBD600C80BBB /* LettersTests.swift */,
+				96DEB312250B0E3700A54338 /* ScoreCalculator.swift */,
+				96DF8401250B366700C80BBB /* ScoreCalculatorTests.swift */,
+				96DEB308250A8AE600A54338 /* ScoreValues.swift */,
+				96DEB30A250AAF4A00A54338 /* ScoreValuesTests.swift */,
+				96DF8407250BB42100C80BBB /* WordGroup.swift */,
+				96DF8409250BB44300C80BBB /* WordGroupTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96DEB2D1250A852400A54338 /* MaxWordScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96DEB2FC250A852500A54338 /* Build configuration list for PBXNativeTarget "MaxWordScore" */;
+			buildPhases = (
+				96DEB2CE250A852400A54338 /* Sources */,
+				96DEB2CF250A852400A54338 /* Frameworks */,
+				96DEB2D0250A852400A54338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxWordScore;
+			productName = MaxWordScore;
+			productReference = 96DEB2D2250A852400A54338 /* MaxWordScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96DEB2E7250A852500A54338 /* MaxWordScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96DEB2FF250A852500A54338 /* Build configuration list for PBXNativeTarget "MaxWordScoreTests" */;
+			buildPhases = (
+				96DEB2E4250A852500A54338 /* Sources */,
+				96DEB2E5250A852500A54338 /* Frameworks */,
+				96DEB2E6250A852500A54338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96DEB2EA250A852500A54338 /* PBXTargetDependency */,
+			);
+			name = MaxWordScoreTests;
+			productName = MaxWordScoreTests;
+			productReference = 96DEB2E8250A852500A54338 /* MaxWordScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96DEB2F2250A852500A54338 /* MaxWordScoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96DEB302250A852500A54338 /* Build configuration list for PBXNativeTarget "MaxWordScoreUITests" */;
+			buildPhases = (
+				96DEB2EF250A852500A54338 /* Sources */,
+				96DEB2F0250A852500A54338 /* Frameworks */,
+				96DEB2F1250A852500A54338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96DEB2F5250A852500A54338 /* PBXTargetDependency */,
+			);
+			name = MaxWordScoreUITests;
+			productName = MaxWordScoreUITests;
+			productReference = 96DEB2F3250A852500A54338 /* MaxWordScoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96DEB2CA250A852400A54338 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = ADSRMedia;
+				TargetAttributes = {
+					96DEB2D1250A852400A54338 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					96DEB2E7250A852500A54338 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 96DEB2D1250A852400A54338;
+					};
+					96DEB2F2250A852500A54338 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 96DEB2D1250A852400A54338;
+					};
+				};
+			};
+			buildConfigurationList = 96DEB2CD250A852400A54338 /* Build configuration list for PBXProject "MaxWordScore" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96DEB2C9250A852400A54338;
+			productRefGroup = 96DEB2D3250A852400A54338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96DEB2D1250A852400A54338 /* MaxWordScore */,
+				96DEB2E7250A852500A54338 /* MaxWordScoreTests */,
+				96DEB2F2250A852500A54338 /* MaxWordScoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96DEB2D0250A852400A54338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DEB2E2250A852500A54338 /* LaunchScreen.storyboard in Resources */,
+				96DEB2DF250A852500A54338 /* Preview Assets.xcassets in Resources */,
+				96DEB2DC250A852500A54338 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DEB2E6250A852500A54338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DEB2F1250A852500A54338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96DEB2CE250A852400A54338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DEB315250B0EAE00A54338 /* DefaultWordsValidator.swift in Sources */,
+				96DEB2D6250A852400A54338 /* AppDelegate.swift in Sources */,
+				96DEB320250B2B0400A54338 /* ValidationErrors.swift in Sources */,
+				96DF8408250BB42100C80BBB /* WordGroup.swift in Sources */,
+				96DEB327250B2DD600A54338 /* LettersValidator.swift in Sources */,
+				96DEB319250B263000A54338 /* DefaultLettersValidator.swift in Sources */,
+				96DF840C250BB98500C80BBB /* Letters.swift in Sources */,
+				96DEB30D250ABC6E00A54338 /* DefaultScoreValuesValidator.swift in Sources */,
+				96DEB325250B2D7C00A54338 /* WordsValidator.swift in Sources */,
+				96DEB322250B2CEF00A54338 /* ScoreValuesValidator.swift in Sources */,
+				96DF8413250D66CF00C80BBB /* Array+Helpers.swift in Sources */,
+				96DEB2D8250A852400A54338 /* SceneDelegate.swift in Sources */,
+				96DEB2DA250A852400A54338 /* ContentView.swift in Sources */,
+				96DEB309250A8AE600A54338 /* ScoreValues.swift in Sources */,
+				96DEB313250B0E3700A54338 /* ScoreCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DEB2E4250A852500A54338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DEB30F250ABCE500A54338 /* DefaultScoreValueValidatorTests.swift in Sources */,
+				96DF840A250BB44300C80BBB /* WordGroupTests.swift in Sources */,
+				96DEB311250B06BA00A54338 /* MockScoreValueValidator.swift in Sources */,
+				96DF8410250BBBD600C80BBB /* LettersTests.swift in Sources */,
+				96DF8404250B376400C80BBB /* MockWordsValidator.swift in Sources */,
+				96DEB31B250B276C00A54338 /* DefaultLettersValidatorTests.swift in Sources */,
+				96DF8402250B366700C80BBB /* ScoreCalculatorTests.swift in Sources */,
+				96DEB30B250AAF4A00A54338 /* ScoreValuesTests.swift in Sources */,
+				96DEB2ED250A852500A54338 /* MaxWordScoreTests.swift in Sources */,
+				96DF8406250B386000C80BBB /* MockLettersValidator.swift in Sources */,
+				96DEB317250B0F7700A54338 /* DefaultWordsValidatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DEB2EF250A852500A54338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DEB2F8250A852500A54338 /* MaxWordScoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96DEB2EA250A852500A54338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96DEB2D1250A852400A54338 /* MaxWordScore */;
+			targetProxy = 96DEB2E9250A852500A54338 /* PBXContainerItemProxy */;
+		};
+		96DEB2F5250A852500A54338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96DEB2D1250A852400A54338 /* MaxWordScore */;
+			targetProxy = 96DEB2F4250A852500A54338 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96DEB2E0250A852500A54338 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96DEB2E1250A852500A54338 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96DEB2FA250A852500A54338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96DEB2FB250A852500A54338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96DEB2FD250A852500A54338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MaxWordScore/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MaxWordScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adsrmedia.MaxWordScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96DEB2FE250A852500A54338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MaxWordScore/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MaxWordScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adsrmedia.MaxWordScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		96DEB300250A852500A54338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaxWordScoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adsrmedia.MaxWordScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaxWordScore.app/MaxWordScore";
+			};
+			name = Debug;
+		};
+		96DEB301250A852500A54338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaxWordScoreTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adsrmedia.MaxWordScoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaxWordScore.app/MaxWordScore";
+			};
+			name = Release;
+		};
+		96DEB303250A852500A54338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaxWordScoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adsrmedia.MaxWordScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaxWordScore;
+			};
+			name = Debug;
+		};
+		96DEB304250A852500A54338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MaxWordScoreUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.adsrmedia.MaxWordScoreUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaxWordScore;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96DEB2CD250A852400A54338 /* Build configuration list for PBXProject "MaxWordScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DEB2FA250A852500A54338 /* Debug */,
+				96DEB2FB250A852500A54338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96DEB2FC250A852500A54338 /* Build configuration list for PBXNativeTarget "MaxWordScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DEB2FD250A852500A54338 /* Debug */,
+				96DEB2FE250A852500A54338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96DEB2FF250A852500A54338 /* Build configuration list for PBXNativeTarget "MaxWordScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DEB300250A852500A54338 /* Debug */,
+				96DEB301250A852500A54338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96DEB302250A852500A54338 /* Build configuration list for PBXNativeTarget "MaxWordScoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DEB303250A852500A54338 /* Debug */,
+				96DEB304250A852500A54338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96DEB2CA250A852400A54338 /* Project object */;
+}
